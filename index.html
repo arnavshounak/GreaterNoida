@@ -8,24 +8,35 @@
 </head>
 <body>
 
-<header>
-  Fix Greater Noida!!!
+<header class="topbar">
+  <div class="brand">Fix Greater Noida</div>
+  <div class="subtitle">Document. Expose. Fix.</div>
 </header>
 
-<div class="container">
+<main class="container">
 
-  <div class="grid" id="grid"></div>
+  <!-- GRID: issues display here -->
+  <section>
+    <div class="section-title">Latest Issues</div>
+    <div class="grid" id="grid"></div>
+  </section>
 
   <button class="add-btn" onclick="addCard()">+ Add Issue</button>
 
-  <div class="report-box">
-    <h2>Tell Us About Issues You See</h2>
+  <!-- REPORT BOX -->
+  <section class="report-box">
+    <h2>Tell Us About Some Issues</h2>
+    <p class="muted">Your report will help us highlight real problems in the city.</p>
     <textarea id="userInput" placeholder="Describe the issue you are facing..."></textarea>
     <button onclick="submitIssue()">Submit</button>
     <p id="response"></p>
-  </div>
+  </section>
 
-</div>
+</main>
+
+<footer class="footer">
+  Built for civic accountability • Greater Noida
+</footer>
 
 <script src="script.js"></script>
 </body>
